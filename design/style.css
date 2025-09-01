@@ -33,14 +33,26 @@
     justify-content: center;
 }
 .card{
-    max-width: 720px;
+  max-width: 720px;
+  height: auto;
+      margin-top: 50px;
+    margin-bottom: 50px;
+}
+.top{
+    width: 100%;
     height: auto;
     background-color: var(--white);
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 3%;
+    padding: 3% 3% 0% 3%;
+    border-radius: 10px 10px 0 0;
 }
+.bottom{
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    padding: 0 3% 3% 3%;
+    border-radius: 0 0 10px 10px;
+}
+/* inside Card */
 .card img{
     width: 100%;
     height: auto;
@@ -48,7 +60,7 @@
 }
 .card h1{
     font-size: 40px;
-    margin: 15px 0 20px 0;
+    margin: 0px 0px 20px 0;
     font-family:"Young Serif", serif ;
     font-weight: 100;
 }
@@ -121,19 +133,29 @@
 .card ol li::marker{
   color: var(--Brown800);
 }
-.btb{
-  margin-bottom: 20px;
-}
-.lastp{
-  text-align: start;
-  font-size: 16px;
+
+/* Table */
+.table{
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 100%;
   font-family:"Outfit", sans-serif ;
-  color: var(--Stone900);
-  margin-left: 50px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(72, 71, 71, 0.446) ;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
-.lastp span{
-  margin-left: 200px;
+.table tr{
+  padding: 50px;
+}
+.table tr td{
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 30px;
+}
+.table tr:last-child td{
+  border-bottom: none;
+}
+.table tr td:last-child{
   color: var(--Brown800);
+  font-weight: bold;
 }
